@@ -22,7 +22,7 @@ class ImageGenerator:
         # Load the API key from environment variables
 
     #api_key = os.getenv("UNSTRUCTURED_API_KEY")
-    api_key = "73jxqziAy9KwoXzSCm9sms6rWCuJcr"
+    api_key = "k9EBiZg9jUhE7n2WSY6J5HlQpMiU98"
     client = UnstructuredClient(api_key_auth=api_key, server_url="https://api.unstructured.io/general/v0/general")
 
 
