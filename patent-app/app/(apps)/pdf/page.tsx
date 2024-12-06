@@ -44,7 +44,7 @@ export default async function Page() {
       
       <PdfLayout
         userEmail={user ? user.email : undefined}
-        documents={documents}
+        documents={documents || undefined}
         credits={credits}
       />
       

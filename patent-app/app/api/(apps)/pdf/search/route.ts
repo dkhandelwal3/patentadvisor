@@ -51,7 +51,7 @@ export async function POST(request: Request) {
     console.log(`User ${userEmail} is searching for: "${query}"`);
 
     // Call the Python API using IPv4 address
-    const pythonApiUrl = `http://127.0.0.1:5001/searchPatent?query=${encodeURIComponent(
+    const pythonApiUrl = `${process.env.NEXT_PUBLIC_API_URL}/searchPatent?query=${encodeURIComponent(
       query
     )}`; 
 

@@ -66,12 +66,13 @@ export default async function Page({ params }: { params: { id: string } }) {
 
   return (
     <div data-theme={toolConfig.company.theme}>
-      <Chat
-        currentDoc={currentDoc}
-        initialMessages={initialMessages}
-        userId={userId}
-        documentId={documentId}
-      />
+      {/*<Chat*/}
+      {/*  currentDoc={currentDoc}*/}
+      {/*  initialPythonMessages={initialMessages}*/}
+      {/*  initialAgenticMessages={}*/}
+      {/*  userId={userId}*/}
+      {/*  documentId={documentId}*/}
+      {/*/>*/}
     </div>
   );
 }

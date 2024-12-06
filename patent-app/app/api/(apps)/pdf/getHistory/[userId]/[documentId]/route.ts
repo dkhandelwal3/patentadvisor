@@ -58,7 +58,7 @@ export async function GET(
     }
 
     // Construct the Python API URL
-    const pythonApiUrl = `http://127.0.0.1:5001/gethistory/${encodeURIComponent(
+    const pythonApiUrl = `${process.env.NEXT_PUBLIC_API_URL}/gethistory/${encodeURIComponent(
       userId
     )}/${encodeURIComponent(documentId)}`;
 

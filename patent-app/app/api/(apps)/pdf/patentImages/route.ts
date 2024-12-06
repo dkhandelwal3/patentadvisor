@@ -46,7 +46,7 @@ export async function GET(req: NextRequest) {
     }
 
     // Construct the Python API URL
-    const pythonApiUrl = `http://127.0.0.1:5001/patent/images/${encodeURIComponent(
+    const pythonApiUrl = `${process.env.NEXT_PUBLIC_API_URL}/patent/images/${encodeURIComponent(
       patentId
     )}`;
 

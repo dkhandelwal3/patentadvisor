@@ -101,7 +101,7 @@ export default function AuthComponent() {
             <div className="group relative overflow-hidden transition duration-300 hover:opacity-100">
               <div className="p-12 relative overflow-hidden rounded-lg">
                 <img
-                  src="/Hero.webp"
+                  src="/hero.webp"
                   className="w-full group-hover:scale-105  duration-300 transition rounded-md v-lazy-image v-lazy-image-loaded"
                   alt="Auth Image"
                 />

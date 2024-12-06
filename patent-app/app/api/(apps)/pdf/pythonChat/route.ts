@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
     console.log(`User ${userEmail} is querying document ${documentId} with: "${query}"`);
 
     // Construct the Python API URL
-    const pythonApiUrl = `http://127.0.0.1:5001/queryDocument/${encodeURIComponent(userId)}/${encodeURIComponent(documentId)}?query=${encodeURIComponent(query)}`;
+    const pythonApiUrl = `${process.env.NEXT_PUBLIC_API_URL}/queryDocument/${encodeURIComponent(userId)}/${encodeURIComponent(documentId)}?query=${encodeURIComponent(query)}`;
 
     // Call the Python API
     const pythonResponse = await fetch(pythonApiUrl, {

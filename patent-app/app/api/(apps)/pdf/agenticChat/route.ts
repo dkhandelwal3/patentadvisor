@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
     }
 
     // Construct the Agentic Chatbot API URL
-    const agenticApiUrl = `http://127.0.0.1:5001/patent/query/${encodeURIComponent(
+    const agenticApiUrl = `${process.env.NEXT_PUBLIC_API_URL}/patent/query/${encodeURIComponent(
       userId
     )}/${encodeURIComponent(patentId)}?query=${encodeURIComponent(query)}`;
 
